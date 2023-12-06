@@ -14,6 +14,7 @@ class _Device:
     def is_gpu(self):
         ''' Returns `True` if the current device is GPU, `False` otherwise. '''
         return self.current() is not DeviceId.CPU
+
   
     def current(self):
         return self._current_device
